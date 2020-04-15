@@ -11,3 +11,9 @@ This setup will need to meet the following specifications:
  - The HAProxy config should be provided to the ambassador container using a volume mount that places the data from the 
  ConfigMap in a file at /usr/local/etc/haproxy/haproxy.cfg.
  - haproxy.cfg should contain the following configuration data:
+
+****
+**Some commands**
+
+`kubectl get pod fruit-service -o=custom-columns=IP:.status.podIP --no-headers`
+
